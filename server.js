@@ -58,6 +58,7 @@ app.put("/clientes/:id", function(req, res){
     // ele busca no JSON com o método find o id do cliente
     const cliente = data.find(client => client.id == id);
 
+    // se o clente não existir precisamos retorna algum erro legível para quem está consumindo nossa API
     if(!cliente){
         return res.status(204).json();
     }
@@ -68,7 +69,7 @@ app.put("/clientes/:id", function(req, res){
     cliente.email = email;
     cliente.idade = idade
 
-    // responde
+    // resposta
     res.json(cliente);
 
 });
@@ -78,24 +79,22 @@ app.put("/clientes/:id", function(req, res){
 app.delete("/clientes/:id", function(req, res){
     // pego o id do cliente do parâmetro com o req.params
     const { id } = req.params;
-
+    // find retorna o objeto com o indice igual ao passado como parâmetro
     const cliente = data.find(client => client.id == id);
 
+    // se o clente não existir precisamos retorna algum erro legível para quem está consumindo nossa API
     if(!cliente){
         return res.status(204).json();
     }
 
-    // data.forEach((element, i) => {
-    //     if(cliente.id === id){
-    //         data.splice(i, 1)
-    //     }
-    // })
-
-    data.splice(id+1, 1);
+    // pesquisa o objeto cliente dentro no array data e retorna a posição do mesmo para remover
+    let indice_remover = data.indexOf(cliente);   
+    // nesse caso, o splice remove 1 item do array a partir do primeiro indice passado  
+    data.splice(indice_remover, 1);
+    // resposta
     res.json(data);
-    
+      
 });
-
 
 // inicio o server na porta 3000 e recebo uma função de callback
 app.listen(3000, function(){
