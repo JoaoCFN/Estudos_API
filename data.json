@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "João Carlos Ferreira Neto",
+    "email": "joaoneto100@hotmail.com",
+    "idade": 19
+  },
+  {
+    "id": 2,
+    "nome": "Jonas",
+    "email": "hebertijonas@gmail.com",
+    "idade": 23  
+  },
+  {
+    "id": 3,
+    "nome": "Bacelar",
+    "email": "bacelar@hotmail.com",
+    "idade": 19 
+  },
+  {
+    "id": 4,
+    "nome": "David",
+    "email": "david@gmail.com",
+    "idade": 22 
+  }
+]
