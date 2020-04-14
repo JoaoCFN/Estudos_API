@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "nome": "João Carlos Ferreira Neto",
-    "email": "joaoneto100@hotmail.com",
+    "nome": "João",
+    "email": "joao100@hotmail.com",
     "idade": 19
   },
   {
     "id": 2,
     "nome": "Jonas",
-    "email": "hebertijonas@gmail.com",
+    "email": "jonas@gmail.com",
     "idade": 23  
   },
   {
