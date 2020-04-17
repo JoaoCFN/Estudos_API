@@ -6,12 +6,12 @@ async function start(){
         url: "https://api2.totalvoice.com.br/sms",
         method: "post",
         headers: {
-            "Access-Token": "1dcbc36de3d737bbc0ada15f2a07c89b",           
+            "Access-Token": "286e19ab26a5a7aa662c2e0dd9c2c156",           
         },
         // body da minha requisição
         data: {
             "numero_destino": "75988383174",
-            "mensagem": "Salve mano. Esse é o teste do SMS"
+            "mensagem": "Teste de mensagem sms"
         }
     })
     //pegar a resposta pelo console
