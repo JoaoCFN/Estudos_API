@@ -1,4 +1,4 @@
-#  ESTUDOS API
+#  Estudos API
  
 ## :closed_book: Sobre 
  ### Este é um repositório de estudos
